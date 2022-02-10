@@ -18,13 +18,13 @@ tabBtn.addEventListener('click', ()=>{
   })
 })
 
-deleteBtn.addEventListener('dblclick', function(){
+deleteBtn.addEventListener('dblclick', ()=>{
     localStorage.clear()
     myLeads = []
     render(myLeads)
 })
 
-inputBtn.addEventListener('click', function(){
+inputBtn.addEventListener('click', ()=>{
     myLeads.push((inputEl.value).trim())
     inputEl.value = ''
     localStorage.setItem('myLeads', JSON.stringify(myLeads))
